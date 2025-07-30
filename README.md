@@ -3,11 +3,20 @@ Este proyecto es una aplicación de consola en Java que permite convertir entre 
 
 ## 📁 Estructura del Proyecto
 El proyecto está dividido en dos paquetes principales:
-    Class
-        Conversion.java # Record que mapea los datos de respuesta JSON
-        Consulta.java # Realiza peticiones HTTP a la API
-    Main
-        Principal.java # Clase principal que ejecuta el programa e interactua con el usuario
+- `Class/`
+  - `Conversion.java`  
+    ▸ Representa un record que mapea los datos de respuesta JSON de la API.  
+  - `Consulta.java`  
+    ▸ Se encarga de realizar las peticiones HTTP a la API de ExchangeRate.
+
+- `Main/`
+  - `Principal.java`  
+    ▸ Clase principal
+      - Muestra las monedas disponibles.  
+      - Solicita al usuario la moneda de origen, el valor y la moneda destino.  
+      - Realiza la conversión usando la API.  
+      - Muestra el resultado en consola.  
+      - Permite salir del programa escribiendo `salir`.
 
 ## ❓ ¿Qué hace?
 - Muestra una lista de todas las monedas disponibles.
